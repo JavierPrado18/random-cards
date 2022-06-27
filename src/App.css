@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+  
+.card{
+  
+  background-color: white;
+
+  padding: 2%;
+  width: 40%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.card div{
+  display: flex;
+  
+
+  
+
+
+}
+.card div i{
+  font-size:4rem;
+  
+}
+.card p{
+  text-align: right;
+   
+}
+
+
+.btn{
+  font-size: xx-large;
+  cursor: pointer;
+}
