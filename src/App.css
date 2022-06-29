@@ -16,15 +16,12 @@
   width: 40%;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-.card div{
-  display: flex;
-  flex-wrap:wrap;
-  
+
 
   
 
 
-}
+
 .card div i{
   font-size:4rem;
   
@@ -40,3 +37,7 @@
   cursor: pointer;
 }
 
+.container-phrase{
+  display: flex;
+  flex-wrap: nowrap;
+}
