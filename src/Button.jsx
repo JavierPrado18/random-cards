@@ -1,9 +1,30 @@
+import { useState } from "react"
+import QuoteBox from "./QuoteBox"
+import quotes from "./quotes.json"
+
+
 const Button=()=>{
-    const refresh=()=>{
-        location.reload();
+     //Para las frases
+     const randomQuotes=Math.floor(Math.random()*quotes.length)
+    
+     const [quote ,setQuote]=useState(randomQuotes)
+
+     const colors=["#1A7F91","#F3C516","#A42B12","#3E3E3D","#353173","#ADADAD","#AEC9D0","#FBE882","#4FBCFD","#32DA78"]
+    const randomColors=Math.floor(Math.random()*colors.length)
+    const color=colors[randomColors]
+     
+     
+     
+    const change=()=>{
+        const randomQuotes=Math.floor(Math.random()*quotes.length)
+        setQuote(randomQuotes)
+        
     }
     return(
-        <p className="btn" onClick={refresh}><i class="fa-solid fa-circle-chevron-right"></i></p>
+        <>
+            <QuoteBox quote={quote} color={color}/>
+            <p className="btn" onClick={change}  style={{color:color}}><i class="fa-solid fa-circle-chevron-right"></i></p>
+        </>
     )
 }
 export default Button
