@@ -1,0 +1,39 @@
+
+.App{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  background-color: white;
+  padding: 20px;
+  text-align: right;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  width: 400px;
+  
+
+}
+
+.quote{
+  display: flex;
+  text-align: center;
+  text-align: center;
+  
+}
+.quote i{
+  font-size: 70px;
+  margin-right: 10px;
+}
+button{
+  border: none;
+  background-color: transparent;
+  font-size: xxx-large;
+
+  
+}
+button i:hover{
+  color:#011627 ;
+  transition: all .7s;
+}
